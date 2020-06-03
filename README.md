@@ -1,126 +1,68 @@
-# TDD Workshop
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> Testing driven development
+## Available Scripts
 
-![TDD Diagram](https://geekytheory.com/wp-content/uploads/2015/05/TDD-Diagram-287x300.gif)
+In the project directory, you can run:
 
-- Choose a feature to implement.
-- Write a test case.
-- Test should fails. If it passes, the feature is already implemented.
-- Write the implementation. Follow KISS (Keep it simple, stupid).
-- Run your tests to check if it passes.
-- Refactor code to simplify, improve, whatever...
+### `yarn start`
 
-## Why testing?
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Helps prevent future regressions and bugs.
-- Increases confidence that the code works as expected.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## Why TDD?
+### `yarn test`
 
-- Design before implementation 🤔💡.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Cons?
+### `yarn build`
 
-- Takes longer to develop (but it can save time in the long run).
-- Testing edge cases is hard.
-- Mocking, faking, and stubbing are all even harder.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## But BDD...
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-> Behauvior Driven Development
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-TDD but tests should describe business logic in business "words".
+### `yarn eject`
 
-## Kata ⛩
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Code kata is an exercise in programming which helps programmers hone their
-skills through practice and repetition.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-For this session, we will follow two exercises:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- The FizzBuzz kata as general Javascript TDD.
-- A shop list application as visual components TDD.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Requisites
+## Learn More
 
-Only Javascript (ES6+) is required to participate on the session but a very
-basic knowledge of React is recommended in order to follow the second kata where
-we build a very simple React app as example of _TDD-ing_ visual components.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Preparing... 🛠
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-We are going to use [Visual Studio Code](https://code.visualstudio.com/) and
-[Live Share](https://visualstudio.microsoft.com/es/services/live-share/)
-functionality so please, be sure you have installed and configured (logged)
-[this](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
-extension. The link session will be distributed on the kata session.
+### Code Splitting
 
-In addition, I recommend you the
-[Jest extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
-for VS Code but it's not strictly necessary.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-Finally, this workshop will use `create-react-app` as base project so please,
-ensure you have an empty generated project:
+### Analyzing the Bundle Size
 
-```bash
-npx create-react-app tdd-workshop
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-If you check your dependencies, you should have something similar to:
+### Making a Progressive Web App
 
-```json
-{
-  "@testing-library/jest-dom": "^4.2.4",
-  "@testing-library/react": "^9.3.2",
-  "@testing-library/user-event": "^7.1.2",
-  "react": "^16.13.1",
-  "react-dom": "^16.13.1",
-  "react-scripts": "3.4.1"
-}
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-Now, we are ready to rock... 🚀
+### Advanced Configuration
 
-### FizzBuzz kata description
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-- Write a program that prints one line for each number from 1 to 100.
-- For multiples of three print `Fizz` instead of the number.
-- For the multiples of five print `Buzz` instead of the number.
-- For numbers which are multiples of both three and five print `FizzBuzz`
-  instead of the number.
+### Deployment
 
-### Shop list (kata)
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-- Should be a list of items.
-- Each item should have a remove link.
-- When the user clicks on remove link, this element should be removed.
-- Should be an input box with an "add button".
-- Button should be disabled when text is empty.
-- Button should be enabled when input has text.
-- When the user clicks on the button, the item should be added to the list.
+### `yarn build` fails to minify
 
-### Kata Resolved
-
-You can check the `develop` branch which contains a resolved version of these
-two exercises. Please, notice that this is only one possible solution.
-
-## Interesting links and references
-
-- [Kata-Log](https://kata-log.rocks/index.html): kata's repository.
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom)
-- [user-event](https://testing-library.com/docs/ecosystem-user-event)
-- [Learn Test Driven Development (TDD)](https://github.com/dwyl/learn-tdd)
-- 🎬 (🇪🇸)
-  [TDD Mi cuaderno de recetas - Modesto San Juan](https://www.youtube.com/watch?v=D1fWBImC2r8)
-- 🎬
-  [Test Driven Development (TDD) on a real app](https://www.youtube.com/watch?v=G2KV3YlvDFQ)
-- 🎬
-  [Test Driven Development & Refactoring - JS Testing 101 with Jest](https://www.youtube.com/watch?v=6pYUzEduLyU)
-
----
-
-> 🎧 This workshop has been prepared listening
-> [re:member - Ólafur Arnalds](https://open.spotify.com/album/6JpQGIi2he6iskzR4aLwPG?si=oGk8ZQaRTbaUijs73cQNAQ)
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
